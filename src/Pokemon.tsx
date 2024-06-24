@@ -8,7 +8,7 @@ interface IPokemon {
 
 const query = `
 query pokemonList {
-  pokemon: pokemon_v2_pokemonspecies {
+  pokemon: pokemon_v2_pokemonspecies(order_by: {id: asc}) {
       name
       id
   }
