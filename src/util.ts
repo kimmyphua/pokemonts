@@ -1,8 +1,12 @@
-export async function fetchGraphQL(
-  query: string,
-  variables: any,
+export async function fetchGraphQL({
+  query,
+  variables,
+  operationName
+}: {
+  query: string
+  variables: any
   operationName: string
-) {
+}) {
   const result = await fetch('https://beta.pokeapi.co/graphql/v1beta', {
     method: 'POST',
     body: JSON.stringify({

@@ -1,0 +1,50 @@
+.App {
+  text-align: start;
+  padding: 1rem;
+}
+
+table {
+  width: 400px;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 10px;
+
+  thead {
+    th {
+      cursor: pointer;
+      &:hover {
+        background-color: aquamarine;
+      }
+    }
+  }
+  tbody tr td {
+    border-top-width: 1px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-style: solid;
+    border-color: black;
+  }
+
+  td:last-child {
+    border-right: 0px;
+  }
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  margin: 10px;
+}
+.pagination-key {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 2px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: aquamarine;
+  }
+}

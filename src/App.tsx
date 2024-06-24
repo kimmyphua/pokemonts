@@ -1,4 +1,4 @@
-import './App.css'
+import './App.scss'
 import Pokemon from './Pokemon'
 
 function App() {
